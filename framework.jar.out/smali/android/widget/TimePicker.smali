@@ -278,7 +278,10 @@
 
     invoke-virtual {v8, v9}, Landroid/widget/NumberPicker;->setOnValueChangedListener(Landroid/widget/NumberPicker$OnValueChangeListener;)V
 
+<<<<<<< HEAD
     .line 204
+=======
+>>>>>>> 16498b4... resolve the conflicts
     iget-object v8, p0, Landroid/widget/TimePicker;->mMinuteSpinner:Landroid/widget/NumberPicker;
 
     const v9, 0x10202e9

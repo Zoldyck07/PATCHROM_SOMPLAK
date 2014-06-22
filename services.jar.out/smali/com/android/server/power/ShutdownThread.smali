@@ -744,6 +744,10 @@
     .line 150
     .local v6, resourceId:I
     :goto_1
+    invoke-static {v6}, Lcom/android/server/power/Injector$ShutdownThreadHook;->getResourceId(I)I
+
+    move-result v6
+
     if-eqz p1, :cond_a
 
     .line 151
@@ -934,6 +938,10 @@
 
     .line 218
     :cond_3
+    sget-object v8, Lcom/android/server/power/ShutdownThread;->sConfirmDialog:Landroid/app/AlertDialog;
+
+    invoke-static {v8}, Lcom/android/server/power/Injector$ShutdownThreadHook;->setupShutdownConfirmDialog(Landroid/app/AlertDialog;)V
+
     sget-object v8, Lcom/android/server/power/ShutdownThread;->sConfirmDialog:Landroid/app/AlertDialog;
 
     iput-object v8, v1, Lcom/android/server/power/ShutdownThread$CloseDialogReceiver;->dialog:Landroid/app/Dialog;

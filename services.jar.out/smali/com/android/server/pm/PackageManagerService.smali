@@ -3699,10 +3699,18 @@
 
     iput-object v3, v0, Lcom/android/server/pm/PackageManagerService;->mRequiredVerifierPackage:Ljava/lang/String;
 
+<<<<<<< HEAD
     .line 1617
     monitor-exit v5
     :try_end_19
     .catchall {:try_start_19 .. :try_end_19} :catchall_5
+=======
+    invoke-static {}, Lcom/android/server/pm/Injector$PackageManagerServiceHook;->postScanPackages()V
+
+    monitor-exit v54
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_0
+>>>>>>> 16498b4... resolve the conflicts
 
     .line 1618
     :try_start_1a
@@ -21079,7 +21087,17 @@
     .end local v30           #i:I
     .end local v56           #renamed:Ljava/lang/String;
     :cond_14
+<<<<<<< HEAD
     move-object/from16 v0, v52
+=======
+    move-object/from16 v0, p1
+
+    move-object/from16 v1, v62
+
+    invoke-static {v0, v1}, Lcom/android/server/pm/Injector$PackageManagerServiceHook;->addMiuiExtendFlags(Landroid/content/pm/PackageParser$Package;Lcom/android/server/pm/PackageSetting;)V
+
+    move-object/from16 v0, v62
+>>>>>>> 16498b4... resolve the conflicts
 
     iget-object v3, v0, Lcom/android/server/pm/PackageSetting;->origPackage:Lcom/android/server/pm/PackageSettingBase;
 
@@ -41371,6 +41389,12 @@
 
     .line 7166
     :cond_4
+    move-object/from16 v0, p4
+
+    invoke-static {p0, v0}, Lcom/android/server/pm/Injector$PackageManagerServiceHook;->getPackageInstaller(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p4
+
     move-object/from16 v0, p5
 
     invoke-virtual {v0, v11}, Landroid/content/pm/VerificationParams;->setInstallerUid(I)V

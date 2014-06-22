@@ -1078,6 +1078,11 @@
 
     iput-object v1, p0, Lcom/android/internal/widget/ActionBarView;->mTitleView:Landroid/widget/TextView;
 
+<<<<<<< HEAD
+=======
+    .line 828
+    .line 829
+>>>>>>> 16498b4... resolve the conflicts
     iget-object v1, p0, Lcom/android/internal/widget/ActionBarView;->mTitleLayout:Landroid/view/ViewGroup;
 
     const v2, 0x1020266

@@ -5228,9 +5228,11 @@
 
     .line 6059
     .local v1, diff:I
-    iget-object v10, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mTopFullscreenOpaqueWindowState:Landroid/view/WindowManagerPolicy$WindowState;
+    iget-object v10, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mFocusedWindow:Landroid/view/WindowManagerPolicy$WindowState;
 
-    invoke-interface {v8, v10}, Landroid/view/WindowManagerPolicy$WindowState;->getNeedsMenuLw(Landroid/view/WindowManagerPolicy$WindowState;)Z
+    iget-object v12, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mTopFullscreenOpaqueWindowState:Landroid/view/WindowManagerPolicy$WindowState;
+
+    invoke-static {v10, v12}, Lcom/android/internal/policy/impl/PhoneWindowManager$Injector;->getNeedsMenuLw(Landroid/view/WindowManagerPolicy$WindowState;Landroid/view/WindowManagerPolicy$WindowState;)Z
 
     move-result v2
 
@@ -7590,6 +7592,7 @@
 
     if-nez v2, :cond_9
 
+<<<<<<< HEAD
     invoke-direct/range {p0 .. p0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->expandedDesktopHidesStatusBar()Z
 
     move-result v2
@@ -7612,6 +7615,9 @@
     iput v2, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mSystemTop:I
 
     .line 3529
+=======
+    .line 3525
+>>>>>>> 16498b4... resolve the conflicts
     :cond_9
     move-object/from16 v0, p0
 
@@ -13538,8 +13544,22 @@
     move-result v35
 
     if-eqz v35, :cond_e
+    move-object/from16 v0, p0
 
+<<<<<<< HEAD
     .line 2519
+=======
+    move-object/from16 v1, v35
+
+    iget-object v1, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
+
+    invoke-static {v1}, Lcom/android/internal/policy/impl/PhoneWindowManager$Injector;->isInCallScreenShowing(Landroid/content/Context;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_e
+    .line 2527
+>>>>>>> 16498b4... resolve the conflicts
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mRingHomeBehavior:I
@@ -16059,7 +16079,11 @@
     .line 4607
     .local v16, isWakeKey:Z
     :goto_5
+<<<<<<< HEAD
     if-eqz v11, :cond_7
+=======
+    invoke-static/range {p0 .. p2}, Lcom/android/internal/policy/impl/PhoneWindowManager$Injector;->performReleaseHapticFeedback(Lcom/android/internal/policy/impl/PhoneWindowManager;Landroid/view/KeyEvent;I)V
+>>>>>>> 16498b4... resolve the conflicts
 
     move/from16 v0, p2
 
@@ -23204,13 +23228,13 @@
 
     .line 1064
     .local v0, keyguardLocked:Z
-    iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:Lcom/android/internal/policy/impl/GlobalActions;
+    iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:Lcom/android/internal/policy/impl/MiuiGlobalActions;
 
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->isDeviceProvisioned()Z
 
     move-result v2
 
-    invoke-virtual {v1, v0, v2}, Lcom/android/internal/policy/impl/GlobalActions;->showDialog(ZZ)V
+    invoke-virtual {v1, v0, v2}, Lcom/android/internal/policy/impl/MiuiGlobalActions;->showDialog(ZZ)V
 
     .line 1065
     if-eqz v0, :cond_1
