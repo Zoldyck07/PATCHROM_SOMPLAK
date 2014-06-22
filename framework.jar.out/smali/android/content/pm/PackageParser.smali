@@ -18664,8 +18664,12 @@
     .local v22, cookie:I
     if-eqz v22, :cond_5
 
+
     .line 573
     new-instance v31, Landroid/content/res/Resources;
+
+    .line 574
+#    new-instance v31, Landroid/content/res/Resources;
 
     const/4 v3, 0x0
 

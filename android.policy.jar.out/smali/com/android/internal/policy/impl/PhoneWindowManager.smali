@@ -12771,8 +12771,6 @@
     :catch_1
     move-exception v8
 
-    invoke-static/range {p0 .. p0}, Lcom/android/internal/policy/impl/PhoneWindowManager$Injector;->sendPowerUpBroadcast(Lcom/android/internal/policy/impl/PhoneWindowManager;)V
-
     goto/16 :goto_0
 .end method
 
@@ -17309,6 +17307,8 @@
     move-object/from16 v0, p0
 
     iput-boolean v2, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mPendingPowerKeyUpCanceled:Z
+
+    invoke-static/range {p0 .. p0}, Lcom/android/internal/policy/impl/PhoneWindowManager$Injector;->sendPowerUpBroadcast(Lcom/android/internal/policy/impl/PhoneWindowManager;)V
 
     goto/16 :goto_0
 
