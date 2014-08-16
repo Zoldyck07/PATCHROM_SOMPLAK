@@ -3706,10 +3706,6 @@
 
     invoke-static {}, Lcom/android/server/pm/Injector$PackageManagerServiceHook;->postScanPackages()V
 
-    monitor-exit v54
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_0
-
     .line 1618
     :try_start_1a
     monitor-exit v4

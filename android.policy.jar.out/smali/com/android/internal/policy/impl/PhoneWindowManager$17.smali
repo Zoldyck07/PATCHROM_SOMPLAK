@@ -166,10 +166,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-
-    .line 4487
-    :cond_2
-
     .line 4483
     #:cond_2
 
