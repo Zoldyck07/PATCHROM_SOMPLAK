@@ -115,11 +115,8 @@
 .field public static final FILE_TYPE_TEXT:I = 0x64
 
 .field public static final FILE_TYPE_VOB:I = 0xce
-<<<<<<< HEAD
-=======
 
 .field public static final FILE_TYPE_VC1:I = 0xcc
->>>>>>> 16498b4... resolve the conflicts
 
 .field public static final FILE_TYPE_WAV:I = 0x3
 
@@ -169,11 +166,9 @@
 
 .field private static final LAST_VIDEO_FILE_TYPE:I = 0x1e
 
-<<<<<<< HEAD
 .field private static final LAST_VIDEO_FILE_TYPE2:I = 0xc9
-=======
+
 .field private static final LAST_VIDEO_FILE_TYPE2:I = 0xd0
->>>>>>> 16498b4... resolve the conflicts
 
 .field private static final sFileTypeMap:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
@@ -1476,11 +1471,10 @@
 
     if-lt p0, v0, :cond_2
 
-<<<<<<< HEAD
+
     const/16 v0, 0xc9
-=======
+
     const/16 v0, 0xd0
->>>>>>> 16498b4... resolve the conflicts
 
     if-gt p0, v0, :cond_2
 

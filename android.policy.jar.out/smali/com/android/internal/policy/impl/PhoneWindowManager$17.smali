@@ -166,13 +166,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-<<<<<<< HEAD
+
     .line 4487
     :cond_2
-=======
+
     .line 4483
     #:cond_2
->>>>>>> 16498b4... resolve the conflicts
+
     :try_start_1
     invoke-virtual {v1, v2}, Landroid/os/Messenger;->send(Landroid/os/Message;)V
     :try_end_1

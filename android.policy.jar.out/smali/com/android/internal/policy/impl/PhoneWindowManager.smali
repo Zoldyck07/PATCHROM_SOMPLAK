@@ -7592,7 +7592,7 @@
 
     if-nez v2, :cond_9
 
-<<<<<<< HEAD
+
     invoke-direct/range {p0 .. p0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->expandedDesktopHidesStatusBar()Z
 
     move-result v2
@@ -7615,9 +7615,7 @@
     iput v2, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mSystemTop:I
 
     .line 3529
-=======
-    .line 3525
->>>>>>> 16498b4... resolve the conflicts
+
     :cond_9
     move-object/from16 v0, p0
 
@@ -13546,9 +13544,9 @@
     if-eqz v35, :cond_e
     move-object/from16 v0, p0
 
-<<<<<<< HEAD
+
     .line 2519
-=======
+
     move-object/from16 v1, v35
 
     iget-object v1, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
@@ -13559,7 +13557,7 @@
 
     if-eqz v1, :cond_e
     .line 2527
->>>>>>> 16498b4... resolve the conflicts
+
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mRingHomeBehavior:I
@@ -16079,11 +16077,11 @@
     .line 4607
     .local v16, isWakeKey:Z
     :goto_5
-<<<<<<< HEAD
+
     if-eqz v11, :cond_7
-=======
+
     invoke-static/range {p0 .. p2}, Lcom/android/internal/policy/impl/PhoneWindowManager$Injector;->performReleaseHapticFeedback(Lcom/android/internal/policy/impl/PhoneWindowManager;Landroid/view/KeyEvent;I)V
->>>>>>> 16498b4... resolve the conflicts
+
 
     move/from16 v0, p2
 

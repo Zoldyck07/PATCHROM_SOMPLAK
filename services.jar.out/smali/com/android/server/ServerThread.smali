@@ -904,13 +904,11 @@
 
     invoke-static {v7, v9}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-<<<<<<< HEAD
     .line 345
     new-instance v6, Lcom/android/server/LightsService;
-=======
+
     .line 319
     new-instance v6, Lcom/android/server/MiuiLightsService;
->>>>>>> 16498b4... resolve the conflicts
 
     invoke-direct {v6, v5}, Lcom/android/server/MiuiLightsService;-><init>(Landroid/content/Context;)V
     :try_end_c

@@ -5526,13 +5526,11 @@
 
     if-eqz v0, :cond_0
 
-<<<<<<< HEAD
     .line 1555
     iget-object v0, p0, Lcom/android/internal/telephony/gsm/GSMPhone;->mSimPhoneBookIntManager:Lcom/android/internal/telephony/gsm/SimPhoneBookInterfaceManager;
-=======
+
     .line 1557
     iget-object v0, p0, Lcom/android/internal/telephony/gsm/GSMPhone;->mSimPhoneBookIntManager:Lcom/android/internal/telephony/IccPhoneBookInterfaceManager;
->>>>>>> 16498b4... resolve the conflicts
 
     iget-object v1, p0, Lcom/android/internal/telephony/gsm/GSMPhone;->mUiccController:Lcom/android/internal/telephony/uicc/UiccController;
 

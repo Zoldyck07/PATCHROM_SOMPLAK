@@ -1496,15 +1496,15 @@
 
     .line 3386
     :cond_7
-<<<<<<< HEAD
+
     const v7, 0x1020317
-=======
+
     iget-object v7, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mActionBar:Lcom/android/internal/widget/ActionBarView;
 
     invoke-static {p0, v7}, Lcom/android/internal/policy/impl/Injector$PhoneWindowHook;->handleStartingWindow(Lcom/android/internal/policy/impl/PhoneWindow;Lcom/android/internal/widget/ActionBarView;)V
 
     const v7, 0x1020318
->>>>>>> 16498b4... resolve the conflicts
+
 
     invoke-virtual {p0, v7}, Lcom/android/internal/policy/impl/PhoneWindow;->findViewById(I)Landroid/view/View;
 

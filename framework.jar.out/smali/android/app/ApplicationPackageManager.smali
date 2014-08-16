@@ -2968,17 +2968,17 @@
 
     move-result-object v7
 
-<<<<<<< HEAD
+
     .line 778
     .local v7, r:Landroid/content/res/Resources;
     if-nez v7, :cond_0
-=======
+
     .line 779
     .local v8, r:Landroid/content/res/Resources;
     invoke-static {v8, p1}, Landroid/app/Injector$ApplicationPackageManagerHook;->setResourcesPackageName(Landroid/content/res/Resources;Landroid/content/pm/ApplicationInfo;)V
 
     if-nez v8, :cond_0
->>>>>>> 16498b4... resolve the conflicts
+
 
     .line 781
     new-instance v0, Landroid/content/pm/PackageManager$NameNotFoundException;
